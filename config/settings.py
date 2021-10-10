@@ -1,5 +1,7 @@
 from split_settings.tools import include
 
+from config.splitted_settings.environ import env
+
 include(
     'splitted_settings/installed_apps.py',
     'splitted_settings/middlewares.py',
@@ -54,3 +56,10 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.User'
+
+TOOLBAR = env('TOOLBAR')
+
+INTERNAL_IPS = [
+    'localhost',
+    '127.0.0.1',
+]
