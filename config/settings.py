@@ -8,6 +8,7 @@ include(
     'splitted_settings/environ.py',
     'splitted_settings/boilerplate.py',
     'splitted_settings/db.py',
+    'splitted_settings/rest_framework.py',
 )
 
 TEMPLATES = [
