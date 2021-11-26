@@ -10,6 +10,7 @@ Django==3.2.8
 django-debug-toolbar==3.2.2
 django-environ==0.7.0
 django-split-settings==1.1.0
+djangorestframework==3.12.4
 eradicate==2.0.0
 Faker==9.2.0
 flake8==3.9.2
