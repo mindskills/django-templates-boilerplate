@@ -23,8 +23,9 @@ dumps/
 venv/
 .env
 
-# static 
+# static and media
 static/prod
+media
 
 # logs
 logs/
