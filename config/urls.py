@@ -3,6 +3,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.conf.urls.static import static
 
 from config.swagger import urlpatterns as swagger_urlpattern
 
@@ -23,6 +24,7 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += [
         *swagger_urlpattern,
+        *static(settings.STATIC_URL, document_root=settings.STATIC_ROOT),
     ]
 
 if settings.TOOLBAR:

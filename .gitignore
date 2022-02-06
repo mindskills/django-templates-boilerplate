@@ -24,7 +24,7 @@ venv/
 .env
 
 # static 
-static/
+static/prod
 
 # logs
 logs/
