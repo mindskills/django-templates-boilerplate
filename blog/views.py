@@ -9,4 +9,4 @@ User = get_user_model()
 def some_view(request):
     posts = Post.objects.all()
     users = User.objects.all()
-    return render(request, 'blog/main.html', context={'posts': posts, 'users': users})
+    return render(request, 'blog/main.haml', context={'posts': posts, 'users': users})

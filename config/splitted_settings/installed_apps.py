@@ -9,6 +9,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'drf_yasg',
+    'hamlpy',
 
     'accounts',
     'blog',
