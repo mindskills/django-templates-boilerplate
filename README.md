@@ -22,3 +22,10 @@ make lint
 # или
 isort . && flake8 .
 ```
+
+Создать файл переводов:
+
+```bash
+./manage.py makemessages -l ru
+./manage.py compilemessages
+```
