@@ -74,3 +74,7 @@ INTERNAL_IPS = [
     'localhost',
     '127.0.0.1',
 ]
+
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',  # noqa: F821
+)
