@@ -15,9 +15,12 @@ def user(baker):
 
 
 def test(client):
-    got = client.post('/api/token/', data={
-        'username': 'hp',
-        'password': '1',
-    })
+    got = client.post(
+        '/api/token/',
+        data={
+            'username': 'hp',
+            'password': '1',
+        },
+    )
 
     assert got.status_code == 200

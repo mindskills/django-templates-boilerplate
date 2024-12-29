@@ -26,7 +26,11 @@ tasks:
     cmds:
       - poetry run pytest
 
+  fmt:
+    cmds:
+      - poetry run ruff format
+      - poetry run ruff check --fix --unsafe-fixes
+
   lint:
     cmds:
-      - poetry run isort .
-      - poetry run flake8 .
+      - poetry run ruff check
