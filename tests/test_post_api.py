@@ -5,7 +5,7 @@ from blog.models import Post
 pytestmark = [pytest.mark.django_db]
 
 
-@pytest.fixture()
+@pytest.fixture
 def posts(baker):
     return baker.cycle(10).blend(Post)
 
