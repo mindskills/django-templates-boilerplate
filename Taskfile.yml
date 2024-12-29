@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+
+  test:
+    cmds:
+      - pytest
+
+  lint:
+    cmds:
+      - isort .
+      - flake8 .
