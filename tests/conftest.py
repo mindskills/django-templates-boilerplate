@@ -10,6 +10,6 @@ def client():
 
 
 @pytest.fixture()
-def mixer():
-    from mixer.backend.django import mixer
-    return mixer
+def baker():
+    from model_bakery import baker as _baker
+    return _baker

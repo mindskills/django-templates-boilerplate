@@ -7,8 +7,8 @@ User = get_user_model()
 
 
 @pytest.fixture(autouse=True)
-def user(mixer):
-    user = mixer.blend(User, username='hp')
+def user(baker):
+    user = baker.make(User, username='hp')
     user.set_password('1')
     user.save()
     return user
