@@ -2,11 +2,31 @@ version: '3'
 
 tasks:
 
+  compose-setup:
+    cmds:
+      - docker compose build
+
+  compose-run:
+    cmds:
+      - docker compose run project poetry run python manage.py runserver
+
+  compose-bash:
+    cmds:
+      - docker compose run project bash
+
+  compose-test:
+    cmds:
+      - docker compose run project task test
+
+  compose-lint:
+    cmds:
+      - docker compose run project task lint
+
   test:
     cmds:
-      - pytest
+      - poetry run pytest
 
   lint:
     cmds:
-      - isort .
-      - flake8 .
+      - poetry run isort .
+      - poetry run flake8 .

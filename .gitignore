@@ -29,3 +29,8 @@ media
 
 # logs
 logs/
+
+# docker compose volumes
+postgres-data/
+redis-data/
+rabbitmq-data/
