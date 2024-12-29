@@ -10,7 +10,7 @@ pip install -r requirements.txt
 Запуск тестов:
 
 ```
-make test
+task test
 # или
 pytest
 ```
@@ -18,7 +18,7 @@ pytest
 Запуск сортировки импортов и линтера
 
 ```
-make lint
+task lint
 # или
 isort . && flake8 .
 ```
